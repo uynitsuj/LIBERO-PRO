@@ -102,6 +102,16 @@ class BrownRack(TurbosquidObjects):
     ):
         super().__init__(name, obj_name, joints)
 
+@register_object
+class WineRackStand(TurbosquidObjects):
+    def __init__(
+        self,
+        name="wine_rack_stand",
+        obj_name="wine_rack_stand",
+        joints=[dict(type="free", damping="0.0005")],
+    ):
+        super().__init__(name, obj_name, joints)
+
 
 @register_object
 class WineBottle(TurbosquidObjects):
