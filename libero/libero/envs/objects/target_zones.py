@@ -17,9 +17,9 @@ from robosuite.utils.mjcf_utils import (
 )
 
 # from robosuite.models.objects import BoxObject
-from libero.libero.envs.objects.site_object import SiteObject
+from libero.envs.objects.site_object import SiteObject
 
-from libero.libero.envs.base_object import (
+from libero.envs.base_object import (
     register_visual_change_object,
     register_object,
 )

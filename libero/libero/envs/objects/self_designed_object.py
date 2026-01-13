@@ -6,7 +6,7 @@ from robosuite.models.objects import MujocoXMLObject
 
 import pathlib
 
-from libero.libero.envs.base_object import (
+from libero.envs.base_object import (
     register_object,
 )
 

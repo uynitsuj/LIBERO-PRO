@@ -3,7 +3,7 @@ script_path: "./LIBERO-PRO/notebooks/generate_init_states.py"
 init_file_dir: "./LIBERO-PRO/libero/libero/init_files/"
 
 use_environment: true
-use_swap: false
+use_swap: true
 use_object: false
 use_language: false
 use_task: false
