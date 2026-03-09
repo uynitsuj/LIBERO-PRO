@@ -13,7 +13,8 @@ long_description = "".join(lines)
 
 setup(
     name="libero",
-    packages=[package for package in find_packages() if package.startswith("libero")],
+    package_dir={"": "libero"},
+    packages=find_packages(where="libero"),
     install_requires=[],
     eager_resources=["*"],
     include_package_data=True,
@@ -27,10 +28,8 @@ setup(
     long_description_content_type="text/markdown",
     entry_points={
         "console_scripts": [
-            "lifelong.main=libero.lifelong.main:main",
-            "lifelong.eval=libero.lifelong.evaluate:main",
-            "libero.config_copy=scripts.config_copy:main",
-            "libero.create_template=scripts.create_template:main",
+            "lifelong.main=lifelong.main:main",
+            "lifelong.eval=lifelong.evaluate:main",
         ]
     },
 )
