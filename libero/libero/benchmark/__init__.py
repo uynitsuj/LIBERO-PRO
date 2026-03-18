@@ -137,6 +137,7 @@ libero_suites = [
 "libero_object_swap",
 "libero_object_task",
 "libero_object_env",
+"libero_object_varied",
 ]
 task_maps = {}
 max_len = 0
@@ -881,4 +882,11 @@ class LIBERO_OBJECT_ENV(Benchmark):
     def __init__(self, task_order_index=0):
         super().__init__(task_order_index=task_order_index)
         self.name = "libero_object_env"
+        self._make_benchmark()
+
+@register_benchmark
+class LIBERO_OBJECT_VARIED(Benchmark):
+    def __init__(self, task_order_index=0):
+        super().__init__(task_order_index=task_order_index)
+        self.name = "libero_object_varied"
         self._make_benchmark()
